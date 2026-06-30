@@ -1,42 +1,61 @@
+# ==========================
 # Python
+# ==========================
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
 
-# Virtual Environment
-venv/
-.venv/
-env/
-
+# ==========================
 # Airflow
+# ==========================
 logs/
 airflow.db
 airflow-webserver.pid
 
+# ==========================
+# Virtual Environments
+# ==========================
+venv/
+.venv/
+env/
+
+# ==========================
 # macOS
+# ==========================
 .DS_Store
 
+# ==========================
 # VS Code
+# ==========================
 .vscode/
 
+# ==========================
 # Environment Variables
+# ==========================
 .env
 .env.*
 
-# Credentials
-*.json
-!sample_credentials.json
+# ==========================
+# Google Cloud Credentials
+# ==========================
+service-account*.json
+credentials*.json
+gcp-key*.json
 
-# Jupyter
-.ipynb_checkpoints/
-
+# ==========================
 # Python Cache
+# ==========================
 .pytest_cache/
 .mypy_cache/
 
+# ==========================
 # Temporary Files
+# ==========================
 *.log
 *.tmp
 
+# ==========================
 # OS Files
+# ==========================
 Thumbs.db
